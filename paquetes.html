@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fraa - Paquetes</title>
+    <script
+      src="https://kit.fontawesome.com/aca7cafb64.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="index.html"><img src="img/logo.png" class="logo" alt="fraa" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="paquetes.html">Paquetes</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="lg-bag">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+          <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+    </section>
+
+    <section id="page-header">
+      <h2>Paquetes especiales</h2>
+      <p>Encuentra el paquete ideal con sudaderas y descuento</p>
+    </section>
+
+    <section id="packages" class="section-p1">
+      <h2>Paquetes disponibles</h2>
+      <p>Elige entre nuestros paquetes de sudaderas con descuentos especiales.</p>
+      <div class="pack-container">
+        <div class="pack-card" data-pack="p1">
+          <img src="img/products/f1.jpeg" alt="Pack Esencial" class="pack-img" />
+          <div class="pack-details">
+            <span class="pack-name">Pack Esencial</span>
+            <p>2 sudaderas</p>
+            <p>Colores y tallas a elección</p>
+            <p class="pack-discount">Con descuento del 12%</p>
+            <p class="pack-note">Una para casa, una para salir.</p>
+            <div class="pack-price">
+              <span class="price-original">$700</span>
+              <span class="price-final">$612</span>
+            </div>
+            <button class="normal pack-btn-detalles">Ver detalles</button>
+          </div>
+          <div class="pack-options" style="display: none;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+              <h4 style="margin: 0;">Selecciona color y talla para cada sudadera:</h4>
+              <button class="pack-btn-cerrar" style="background: none; border: none; font-size: 24px; cursor: pointer; color: #999; padding: 0; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">×</button>
+            </div>
+            <div class="pack-prendas"></div>
+            <button class="normal pack-btn-carrito" style="background-color: #2db64d; color: white; width: 100%; margin-top: 10px;">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="pack-card" id="pack-tonal" data-pack="p2">
+          <img src="img/products/f3.jpeg" alt="Pack Tonal" class="pack-img" />
+          <div class="pack-details">
+            <span class="pack-name">Pack Tonal</span>
+            <p>3 sudaderas con tonos neutros coordinados</p>
+            <p>Diseño pensado para combinar fácilmente</p>
+            <p class="pack-discount">Con descuento del 20%</p>
+            <p class="pack-note">Tu guardarropa de básicos completo en una sola compra.</p>
+            <div class="pack-price">
+              <span class="price-original">$1050</span>
+              <span class="price-final">$840</span>
+            </div>
+            <button class="normal pack-btn-detalles">Ver detalles</button>
+          </div>
+          <div class="pack-options" style="display: none;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+              <h4 style="margin: 0;">Selecciona color y talla para cada sudadera:</h4>
+              <button class="pack-btn-cerrar" style="background: none; border: none; font-size: 24px; cursor: pointer; color: #999; padding: 0; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">×</button>
+            </div>
+            <div class="pack-prendas"></div>
+            <button class="normal pack-btn-carrito" style="background-color: #2db64d; color: white; width: 100%; margin-top: 10px;">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="pack-card" data-pack="p3">
+          <img src="img/products/f4.jpeg" alt="Pack Duo Regalo" class="pack-img" />
+          <div class="pack-details">
+            <span class="pack-name">Pack Duo Regalo</span>
+            <p>2 sudaderas más una nota personalizable</p>
+            <p class="pack-discount">Con descuento del 5%</p>
+            <p class="pack-note">El regalo que no falla.</p>
+            <p class="pack-note">Listo para entregar.</p>
+            <div class="pack-price">
+              <span class="price-original">$700</span>
+              <span class="price-final">$665</span>
+            </div>
+            <button class="normal pack-btn-detalles">Ver detalles</button>
+          </div>
+          <div class="pack-options" style="display: none;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+              <h4 style="margin: 0;">Selecciona color y talla para cada sudadera:</h4>
+              <button class="pack-btn-cerrar" style="background: none; border: none; font-size: 24px; cursor: pointer; color: #999; padding: 0; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">×</button>
+            </div>
+            <div class="pack-prendas"></div>
+            <button class="normal pack-btn-carrito" style="background-color: #2db64d; color: white; width: 100%; margin-top: 10px;">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="pack-card" data-pack="p4">
+          <img src="img/products/f4.jpeg" alt="Pack Familiar/Pareja" class="pack-img" />
+          <div class="pack-details">
+            <span class="pack-name">Pack Familiar/Pareja</span>
+            <p>2 tallas distintas</p>
+            <p>Ideal para pareja o familia.</p>
+            <p class="pack-discount">Con descuento del 12%</p>
+            <div class="pack-price">
+              <span class="price-original">$700</span>
+              <span class="price-final">$612</span>
+            </div>
+            <button class="normal pack-btn-detalles">Ver detalles</button>
+          </div>
+          <div class="pack-options" style="display: none;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+              <h4 style="margin: 0;">Selecciona color y talla para cada sudadera:</h4>
+              <button class="pack-btn-cerrar" style="background: none; border: none; font-size: 24px; cursor: pointer; color: #999; padding: 0; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">×</button>
+            </div>
+            <div class="pack-prendas"></div>
+            <button class="normal pack-btn-carrito" style="background-color: #2db64d; color: white; width: 100%; margin-top: 10px;">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="pack-card" data-pack="p5">
+          <img src="img/products/f3.4.jpeg" alt="Pack Coleccionista 5x" class="pack-img" />
+          <div class="pack-details">
+            <span class="pack-name">Pack Coleccionista 5x</span>
+            <p>5 sudaderas</p>
+            <p>Una de cada color</p>
+            <p class="pack-discount">Con descuento del 20%</p>
+            <p class="pack-note">Toda la paleta. Una inversión, multiples looks.</p>
+            <div class="pack-price">
+              <span class="price-original">$1750</span>
+              <span class="price-final">$1400</span>
+            </div>
+            <button class="normal pack-btn-detalles">Ver detalles</button>
+          </div>
+          <div class="pack-options" style="display: none;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+              <h4 style="margin: 0;">Selecciona color y talla para cada sudadera:</h4>
+              <button class="pack-btn-cerrar" style="background: none; border: none; font-size: 24px; cursor: pointer; color: #999; padding: 0; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">×</button>
+            </div>
+            <div class="pack-prendas"></div>
+            <button class="normal pack-btn-carrito" style="background-color: #2db64d; color: white; width: 100%; margin-top: 10px;">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="img/logo.png" alt="fraa" />
+        <h4>Contact</h4>
+        <p>
+          <strong>Direccion:</strong>Para venir al negocio agenda tu cita por
+          WhatsApp
+        </p>
+        <p><strong>Telefono 1:</strong> +52 462 217 0940</p>
+        <p><strong>Telefono 2:</strong> +52 462 110 1663</p>
+        <p><strong>Respuestas:</strong>6:00 a 12:00</p>
+        <div class="follow">
+          <h4>Siguenos</h4>
+          <div class="icon">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4>Sobre nosotros</h4>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Informacion de envio WhatsApp</a>
+        <a href="#">Politica de privacidad</a>
+        <a href="#">Terminos y Condiciones</a>
+        <a href="#">Contactanos en WhatsApp</a>
+      </div>
+      <div class="copyright">
+        <p>© 2026, fraa - fraa</p>
+      </div>
+    </footer>
+
+    <!-- Modal de selección rápida de 3 sudaderas -->
+    <div id="quick-select-modal" class="quick-select-modal" style="display: none;">
+      <div class="quick-select-overlay"></div>
+      <div class="quick-select-container">
+        <button class="quick-select-close" title="Cerrar">×</button>
+        <h2>Selecciona 3 sudaderas</h2>
+        <div id="quick-select-prendas" class="quick-select-prendas"></div>
+        <button id="quick-select-add-btn" class="normal quick-select-add" style="background-color: #2db64d; color: white; width: 100%; margin-top: 15px; padding: 12px;">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
