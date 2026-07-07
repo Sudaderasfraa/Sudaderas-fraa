@@ -81,13 +81,13 @@ const productosData = {
     f5: {
         id: 'f5',
         nombre: 'fraa fundation Oversize Hoodie',
-        precio: 350,
+        precio: 300,
         descripcion: 'Estilo y confort.',
         colores: {
-            negro: {
-                nombre: 'Negro',
-                imagenPrincipal: 'img/products/f5.jpeg',
-                imagenesSecundarias: ['img/products/f5.jpeg', 'img/products/f6.jpeg', 'img/products/f7.jpeg', 'img/products/f8.jpeg']
+            gris: {
+                nombre: 'Gris Rata',
+                imagenPrincipal: 'img/products/f5.jpg',
+                imagenesSecundarias: ['img/products/f5.jpg', 'img/products/f5.1.jpg', 'img/products/f5.2.jpg', 'img/products/f5.3.jpg']
             }
         },
         tallas: ['Chica', 'Mediana', 'Grande']
@@ -95,45 +95,18 @@ const productosData = {
     f6: {
         id: 'f6',
         nombre: 'fraa fundation Oversize Hoodie',
-        precio: 350,
+        precio: 250,
         descripcion: 'Para los amantes del estilo urbano.',
         colores: {
-            negro: {
-                nombre: 'Negro',
-                imagenPrincipal: 'img/products/f6.jpeg',
-                imagenesSecundarias: ['img/products/f6.jpeg', 'img/products/f7.jpeg', 'img/products/f8.jpeg', 'img/products/f1.jpeg']
+            'gris claro': {
+                nombre: 'Gris claro',
+                imagenPrincipal: 'img/products/f6.jpg',
+                imagenesSecundarias: ['img/products/f6.jpg', 'img/products/f6.1.jpg', 'img/products/f6.2.jpg']
             }
         },
         tallas: ['Chica', 'Mediana', 'Grande']
     },
-    f7: {
-        id: 'f7',
-        nombre: 'fraa fundation Oversize Hoodie',
-        precio: 350,
-        descripcion: 'La prenda que estabas buscando.',
-        colores: {
-            negro: {
-                nombre: 'Negro',
-                imagenPrincipal: 'img/products/f7.jpeg',
-                imagenesSecundarias: ['img/products/f7.jpeg', 'img/products/f8.jpeg', 'img/products/f1.jpeg', 'img/products/f2.jpeg']
-            }
-        },
-        tallas: ['Chica', 'Mediana', 'Grande']
-    },
-    f8: {
-        id: 'f8',
-        nombre: 'fraa fundation Oversize Hoodie',
-        precio: 350,
-        descripcion: 'Elegancia casual.',
-        colores: {
-            negro: {
-                nombre: 'Negro',
-                imagenPrincipal: 'img/products/f8.jpeg',
-                imagenesSecundarias: ['img/products/f8.jpeg', 'img/products/f1.jpeg', 'img/products/f2.jpeg', 'img/products/f3.jpeg']
-            }
-        },
-        tallas: ['Chica', 'Mediana', 'Grande']
-    },
+    
     p1: {
         id: 'p1',
         nombre: 'Pack Esencial',
@@ -485,6 +458,7 @@ function cargarProducto() {
     const colorSwatches = {
         negro: '#000000',
         gris: '#808080',
+        "gris claro": '#d3d3d3',
         azul: '#090961',
         beige: '#d3c084',
         verde: '#04533f'
@@ -588,6 +562,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const close = document.getElementById('close');
     if (bar) bar.addEventListener('click', () => nav.classList.add('active'));
     if (close) close.addEventListener('click', () => nav.classList.remove('active'));
+
+    // Renderizar carrito si estamos en cart.html
+    if (document.getElementById('cart')) {
+        renderizarCarrito();
+    }
 
     // Cargar producto si estamos en sproduct.html
     if (document.getElementById('prodetails')) {
