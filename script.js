@@ -492,7 +492,9 @@ function cambiarColor(producto, colorKey) {
     const colorData = producto.colores[colorKey];
     if (!colorData) return;
 
-    document.getElementById('MainImg').src = colorData.imagenPrincipal;
+    // Agregar versión para evitar caché
+    const version = '?v=' + new Date().getTime();
+    document.getElementById('MainImg').src = colorData.imagenPrincipal + version;
 
     const smallImgGroup = document.getElementById('smallImgGroup');
     smallImgGroup.innerHTML = '';
@@ -500,11 +502,11 @@ function cambiarColor(producto, colorKey) {
         const col = document.createElement('div');
         col.className = 'small-img-col';
         const img = document.createElement('img');
-        img.src = imgSrc;
+        img.src = imgSrc + version;
         img.width = 99;
         img.className = 'small-img';
         img.addEventListener('click', () => {
-            document.getElementById('MainImg').src = imgSrc;
+            document.getElementById('MainImg').src = imgSrc + version;
         });
         col.appendChild(img);
         smallImgGroup.appendChild(col);
@@ -549,6 +551,14 @@ function enviarWhatsApp(numero) {
 // EVENTOS GLOBALES
 // ========================
 document.addEventListener('DOMContentLoaded', () => {
+    // Cache buster para imágenes de productos (evita caché en celular)
+    const version = '?v=' + new Date().getTime();
+    document.querySelectorAll('img[src*="products/"]').forEach(img => {
+        if (!img.src.includes('?v=')) {
+            img.src = img.src + version;
+        }
+    });
+
     // Crear elemento de notificación si no existe
     if (!document.getElementById('toast-notification')) {
         const toast = document.createElement('div');
